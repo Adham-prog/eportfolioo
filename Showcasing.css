@@ -1,0 +1,89 @@
+body {  
+    background-image: url('1198137.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #080f13;
+
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    }
+
+    .title {
+  text-align: center;
+  padding: 8px 16px;
+  background: linear-gradient(to right, rgba(119, 201, 241, 0.3), rgba(119, 201, 241, 0.1));
+  color: white;
+  border-radius: 8px;
+  backdrop-filter: blur(2px); /* optional soft glass effect */
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.2);
+  margin: 10px auto;
+  width: fit-content;
+  max-width: 90%;
+}
+
+
+
+
+    .carousel {
+  max-width: 700px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent white */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+  min-height: 280px;
+  backdrop-filter: blur(10px); /* Optional: adds a frosted glass effect */
+}
+
+
+    .activity-card {
+      display: none;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .activity-card.active {
+      display: block;
+    }
+
+    .activity-card h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .activity-card p {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .buttons button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007acc;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .buttons button:hover {
+  background-color: #333;
+  color: white;
+  transform: scale(1.05);
+}

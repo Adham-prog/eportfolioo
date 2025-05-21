@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Showcasing.css">
+    
+  </head>
+<body>
+
+  <div class="title">
+    <h1>Course Activities</h1>
+  </div>
+
+  <div class="carousel">
+    <div class="activity-card active">
+      <h2>Activity 1: Rizal’s Tripartite View of History</h2>
+      <p><strong>Date:</strong> April 30</p>
+      <p><strong>Description:</strong> Discussion of Rizal’s historical framework in three stages: the precolonial, colonial, and post-colonial periods.</p>
+    </div>
+
+    <div class="activity-card">
+      <h2>Activity 2: Rizal and Education</h2>
+      <p><strong>Date:</strong> April 30</p>
+      <p><strong>Description:</strong> Explored Rizal’s advocacy for education as a tool for national progress and reform.</p>
+    </div>
+
+    <div class="activity-card">
+      <h2>Activity 3: The Role of Youth</h2>
+      <p><strong>Date:</strong> April 7</p>
+      <p><strong>Description:</strong> Reflected on Rizal’s famous statement “The youth is the hope of the fatherland” and its relevance today.</p>
+    </div>
+
+    <div class="activity-card">
+      <h2>Activity 4: The Role of Women in Nation-Building</h2>
+      <p><strong>Date:</strong> April 7</p>
+      <p><strong>Description:</strong> Analysis of Rizal’s “Letter to the Women of Malolos” and the historical role of women in the nationalist movement.</p>
+    </div>
+
+    <div class="activity-card">
+      <h2>Activity 5: Leadership</h2>
+      <p><strong>Date:</strong> April 7</p>
+      <p><strong>Description:</strong> Examined Rizal’s qualities as a leader and how they can be applied to modern leadership principles.</p>
+    </div>
+
+    <div class="activity-card">
+      <h2>Activity 6: The Sacrifice and Martyrdom of Rizal</h2>
+      <p><strong>Date:</strong> (Insert actual date)</p>
+      <p><strong>Description:</strong> A group presentation on Dr. José Rizal's life, sacrifice, and execution in Bagumbayan.</p>
+    </div>
+
+    <div class="activity-card">
+      <h2>Activity 7: Rizal and the Philippine Revolution of 1896</h2>
+      <p><strong>Description:</strong> A critical examination of Rizal’s views on the 1896 Philippine Revolution and his connection with the Katipunan.</p>
+    </div>
+
+    <div class="buttons">
+      <button id="prev">Previous</button>
+      <button id="next">Next</button>
+    </div>
+  </div>
+
+  <script>
+    const cards = document.querySelectorAll('.activity-card');
+    let current = 0;
+
+    function updateCarousel(index) {
+      cards.forEach(card => card.classList.remove('active'));
+      cards[index].classList.add('active');
+    }
+
+    document.getElementById('next').addEventListener('click', () => {
+      current = (current + 1) % cards.length;
+      updateCarousel(current);
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+      current = (current - 1 + cards.length) % cards.length;
+      updateCarousel(current);
+    });
+  </script>
+  
+  </body>
+</html>

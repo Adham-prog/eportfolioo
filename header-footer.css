@@ -1,0 +1,18 @@
+.greet{
+  padding-left: 60px;
+  margin: 0;
+  color: white;
+}
+.header-nav{
+  background: linear-gradient(to bottom,#77c9f1 50%, rgba(119,201,241,0)100%);
+  padding: 30px;
+  width: 100%;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns:
+  1fr 1fr 1fr 1fr 1fr ;
+  column-gap: 40px;
+  
+}

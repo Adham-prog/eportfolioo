@@ -1,0 +1,85 @@
+/* General Body Styling */
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Navigation Styling */
+.header-nav {
+  background-color: #082342;
+  padding: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-right: 150px;
+  gap: 70px;
+}
+
+.container ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 5%; /* Adjusted alignment for better placement */
+}
+
+.container li {
+  display: inline;
+}
+
+.container li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 5px;
+  transition: background-color 0.3s ease; /* Corrected syntax */
+}
+
+.container li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.container li a:active {
+  opacity: 0.7;
+}
+
+/* Profile Image Container */
+.profile-container {
+  position: absolute;
+  left: 60%;
+  top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 422px;
+  height: 418px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Name Container */
+.name-container {
+  position: absolute;
+  left: 10%; /* Adjusted left position */
+  top: 450px; /* Adjusted top position */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-name {
+  font-size: 30px;
+  font-weight: bold;
+}

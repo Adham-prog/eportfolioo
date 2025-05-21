@@ -1,0 +1,188 @@
+/* General Reset */
+body {
+  background-image: url('1198137.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #080f13;
+}
+
+/* Navigation */
+.header-nav {
+  background: linear-gradient(to bottom, #77c9f1 50%, rgba(119, 201, 241, 0) 100%);
+  padding: 30px 60px;
+  color: white;
+}
+
+.greet {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 32px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: #9ecae7;
+  border-radius: 5px;
+}
+
+.nav-list li a:active {
+  opacity: 0.7;
+}
+
+/* Profile Section */
+.grid-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  gap: 20px;
+}
+
+
+.img-position {
+  text-align: center;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #9ecae7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+}
+
+.my-name {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0, 0.3);
+  margin-bottom: 15px;
+}
+
+.my-description {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #080f13;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.social-links i {
+  margin-right: 8px;
+}
+
+.social-links a:hover {
+  color: #4184b8;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .grid-profile {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+}
+html, body {
+  overflow-x: hidden;
+}
+.container ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  left: 60%;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.header-nav {
+  padding: 30px 60px; /* 60px might be too much on small screens */
+}
+@media screen and (max-width: 768px) {
+  .header-nav {
+    padding: 20px;
+  }
+}
+.reflection-section {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.7); /* semi-transparent white */
+  margin: 30px auto;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.reflection-section h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #083e68;
+}
+
+.reflection-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #080f13;
+}
+
+

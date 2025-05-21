@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1>My Project</h1>
+      </div>
+    <div class="carousel">
+      <img src="432545253_1442999919935632_8867494864449952972_n.jpg" class="active">
+
+      <img src="adham.jpg">
+
+      <img src="434321244_1450984945803796_1565143118752657946_n.jpg">
+
+      <div class="buttons">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+          </div>
+        </div>
+    
+    </main>
+    
+  <script>
+    const images = document.querySelectorAll
+    ('.carousel img');
+    let currentIndex = 0;
+
+    document.getElementById('next').addEventListener('click',() => {
+          images[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % images.length;
+          images[currentIndex].classList.add('active');
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+      images[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      images[currentIndex].classList.add('active');
+    });
+  </script>
+  
+  </body>
+</html>

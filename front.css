@@ -1,0 +1,50 @@
+body{
+  font-family: Arial, sans-serif;
+  margin:0;
+  background-image: url(1198137.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+.Welcome{
+  display: inline;
+  height: 800px;
+  margin-right: 50px;
+  
+}
+
+ 
+
+.content{
+  text-align: center;
+  width: 200px;
+  border: 15px solid #77c9f1;
+  padding: 50px;
+  margin: 20px;
+}
+
+.second-content{
+  text-align: center;
+  width: 200px;
+  height: 100px;
+  border: 15px solid #77c9f1;
+  padding: 50px;
+  margin: 20px;
+}
+
+.button{
+  transition: opacity 0.13s;
+}
+
+.button:hover{
+  color:#77c9f1;
+}
+
+.button:active{
+  opacity: 0.10;
+}
+
